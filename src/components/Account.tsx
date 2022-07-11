@@ -1,9 +1,7 @@
-import { FC, SetStateAction, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { PublicKey, Connection, clusterApiUrl, AccountInfo } from "@solana/web3.js";
 import { exampleAccounts } from '../utils/exampleAccounts';
-import styles from '../styles/Account.module.css';
 import { deserializeJokeAccount } from "utils/deserializeJokeAccount";
-
 
 
 export const Account: FC = props => {
@@ -51,7 +49,6 @@ export const Account: FC = props => {
 
 
 
-
   return (
     <div className="container">
       <div className="account-examples">
@@ -66,15 +63,15 @@ export const Account: FC = props => {
           }
         </ul>
       </div>
+
       <div className="searchbar-container">
         <input className="searchbar" placeholder="Search for accounts, programs, tokens"
           onChange={event => changeAccount(event, event.target.value)} value={query} />
       </div>
-      <div className="account-container">
 
+      <div className="account-container">
         <div className="account-meta">
           <h3>Account Metadata</h3>
-          {/* <hr></hr> */}
           <table className="card account-meta-fields">
             <tr>
               <td>lamports</td>
@@ -99,13 +96,12 @@ export const Account: FC = props => {
 
         <div className="account-data">
           <h3>Account Data</h3>
-          {/* <hr></hr> */}
           <pre className="codeblock">
             {JSON.stringify(accountInfo?.data, null, 2)}
           </pre>
         </div>
       </div>
-      {/* <hr></hr> */}
+
       <div className="history">
         👈 Back to Previous Account:&nbsp;
         <a className="pk" href="" onClick={event => changeAccount(event, history.slice(-1)[0])}>
