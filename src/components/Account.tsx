@@ -108,8 +108,8 @@ export const Account: FC = props => {
       {/* <hr></hr> */}
       <div className="history">
         👈 Back to Previous Account:&nbsp;
-        <a className="pk" href="" onClick={event => changeAccount(event, history.slice(-1))}>
-          {history.slice(-1)}
+        <a className="pk" href="" onClick={event => changeAccount(event, history.slice(-1)[0])}>
+          {history.slice(-1)[0]}
         </a>
       </div>
     </div>
