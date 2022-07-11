@@ -1,0 +1,162 @@
+@import './reset.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: lightgrey;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Formular Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  ;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+  color: white;
+}
+
+.pk {
+  color: rgb(20, 241, 149);
+  text-decoration: none;
+}
+
+.pk:hover {
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.code {
+  color: rgb(147, 141, 255);
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.codeblock {
+  white-space: pre-wrap;
+  color: rgb(147, 141, 255);
+  background-color: rgba(242, 242, 246, 0.08);;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.container {
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchbar-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.account-examples {
+  align-self: center;
+  margin-top: 40px;
+  font-size: 0.8rem;
+}
+
+.searchbar {
+  margin-top: 60px;
+  height: 2.8rem;
+  width: 800px;
+  text-align: center;
+  margin-bottom: 80px;
+  color: rgb(134, 135, 137);
+  background-color: rgba(242, 242, 246, 0.08);
+  border-radius: 1.625rem;
+  border: none;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1.25rem;
+}
+
+.searchbar:focus {
+  outline: thin solid;
+  outline-color: cyan;
+}
+
+.account-container {
+  display: flex;
+}
+
+.account-address {
+  margin-bottom: 20px;
+}
+
+.account-meta {
+  flex: 0 1 200px;
+}
+
+.account-meta-fields {
+  /* border-collapse: collapse; */
+  min-width: 600px;
+  font-size: 0.9rem;
+}
+
+.account-meta-fields > tr {
+  border: solid;
+  border-width: 1px 0;
+}
+
+.account-meta-fields td:first-child {
+  padding-left: 1.5rem !important;
+}
+
+.account-meta-fields td:last-child {
+  padding-right: 1.5rem !important;
+  text-align: right !important;
+}
+
+.account-data {
+  margin-right: auto;
+
+  /* flex: 1 1 400px; */
+  flex: 1 1 auto;
+  min-width: 0;
+  /* height: auto; */
+}
+
+.history {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 80px;
+}
