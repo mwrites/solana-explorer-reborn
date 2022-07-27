@@ -25,6 +25,10 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 .pk {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  cursor: pointer;
   color: rgb(20, 241, 149);
   text-decoration: none;
 }

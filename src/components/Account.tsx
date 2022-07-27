@@ -56,9 +56,9 @@ export const Account: FC = props => {
         <ul>
           {Object.values(exampleAccounts).map((item, i) =>
             <li key={i}>{item['desc']}:&nbsp;
-              <a className="pk" href="" onClick={event => changeAccount(event, item['pk'])}>
+              <button className="pk" onClick={event => changeAccount(event, item['pk'])}>
                 {item['pk']}
-              </a>
+              </button>
             </li>)
           }
         </ul>
@@ -83,9 +83,9 @@ export const Account: FC = props => {
             </tr>
             <tr>
               <td>ownerProgram</td>
-              <td><a href="" className="pk" onClick={event => changeAccount(event, accountInfo!.owner.toString())}>
+              <td><button className="pk" onClick={event => changeAccount(event, accountInfo!.owner.toString())}>
                 {accountInfo?.owner.toString()}
-              </a></td>
+              </button></td>
             </tr>
             <tr>
               <td>executable</td>
@@ -104,9 +104,9 @@ export const Account: FC = props => {
 
       <div className="history">
         👈 Back to Previous Account:&nbsp;
-        <a className="pk" href="" onClick={event => changeAccount(event, history.slice(-1)[0])}>
+        <button className="pk" onClick={event => changeAccount(event, history.slice(-1)[0])}>
           {history.slice(-1)[0]}
-        </a>
+        </button>
       </div>
     </div>
   );
